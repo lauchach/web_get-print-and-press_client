@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* .image-advertise {
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+} */
+
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in;
+}
+
+.remove-blur {
+  filter: blur(0);
+  transition: filter 0.3s ease-in;
+}
+
+.drop-shadow:hover {
+  /* transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+.image-advertise:hover {
+  /* transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+.product-image:hover {
+  /* transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+.product-tip:hover {
+  /* transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+.product-service:hover {
+  /* transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+.product-interest:hover {
+  /* transition: box-shadow 0.5s ease-in-out;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  cursor: pointer; */
+}
+
+/* 
+@media only screen and (min-width: 1024px) {
+  .custom-carousel .slick-arrow {
+    background-color: #000 !important;
+    border-radius: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    z-index: 1;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    opacity: 1 !important;
+    position: absolute;
+  }
+
+  .custom-carousel .slick-prev {
+    left: 20px !important;
+  }
+
+  .custom-carousel .slick-next {
+    right: 20px !important;
+  }
+
+  .custom-carousel .slick-prev::before,
+  .custom-carousel .slick-next::before {
+    content: '';
+  }
+
+  .custom-carousel .slick-prev::after,
+  .custom-carousel .slick-next::after {
+    color: #fff !important;
+    font-size: 3rem !important;
+    text-align: center !important;
+    position: relative !important;
+    transform: translate(-50%, -50%) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-inline-width: 0 0 !important;
+    border-block-width: 0 0 !important;
+  }
+
+  .custom-carousel .slick-prev::after {
+    content: '‹' !important;
+    left: 4px !important;
+  }
+
+  .custom-carousel .slick-next::after {
+    content: '›' !important;
+    left: 6px !important;
+  }
+} */
+.detail-subtext {
+  /* display: grid; */
+  /* justify-content: center; */
+  text-align: center;
+  color: #343c97;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.gridez{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+/* @media (min-width: 900px) {
+  .gridez{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 492px) and (max-width: 900px) {
+  .gridez{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (max-width: 492px){
+  .gridez{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+} */
+
+@media only screen and (min-width: 1024px) {
+  .custom-carousel .slick-prev::after,
+  .custom-carousel .slick-next::after {
+    display: none !important;
+  }
+
+  .custom-carousel .slick-arrow {
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .custom-carousel .slick-prev {
+    left: 50px !important;
+  }
+
+  .custom-carousel .slick-next {
+    right: 50px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .detail-subtext p:nth-of-type(1) {
+    font-size: 26px !important;
+  }
+
+  .detail-subtext p:nth-of-type(2) {
+    font-size: 18px !important;
+  }
+
+  .detail-subtext p:nth-of-type(3) {
+    font-size: 18px !important;
+  }
+}
+
+/*......................*/
+/* สไตล์สำหรับหน้าจอที่ใหญ่กว่า 900px */
+@media (min-width: 900px) {
+  .circle-box {
+    width: 450px;
+    height: 450px;
+    font-size: 2rem;
+
+  }
+
+  .step-number {
+    font-size: 250px;
+    font-weight: bold;
+  }
+
+  .step-text {
+    font-size: 5rem;
+    font-weight: 'bold';
+    color: #343c97;
+    text-align: center;
+  }
+}
+
+/* สไตล์สำหรับหน้าจอที่กว้างระหว่าง 492px ถึง 900px */
+@media (min-width: 492px) and (max-width: 900px) {
+  .circle-box {
+    width: 200px;
+    height: 200px;
+    font-size: 1.8rem;
+
+  }
+
+  .step-number {
+    font-size: 500px;
+    font-weight: bold;
+  }
+
+  .step-text {
+    font-size: 3rem;
+    color: #343c97;
+    text-align: center;
+  }
+}
+
+/* สไตล์สำหรับหน้าจอที่กว้างน้อยกว่า 492px */
+@media (max-width: 492px) {
+  .circle-box {
+    width: 300px;
+    height: 300px;
+    font-size: 1.5rem;
+  }
+
+  .step-number {
+    font-size: 150px;
+  }
+
+  .step-text {
+    font-size: 3.5rem;
+    color: #343c97;
+    text-align: center;
+  }
+}
+
